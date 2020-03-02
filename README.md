@@ -22,12 +22,20 @@
 
 service network restart重启网卡 
 
-这里需要说明的是：LAN口为内网口，WAN为外网口，这一步相当于，给软路由设定一个网关（LAN），WAN可直接将option proto设置成DHCP  
+  这里需要说明的是：  
 
-因为openwrt有wan、lan口则需要两块网卡，如下：  
+        LAN口为内网口，WAN为外网口，这一步相当于，给软路由设定一个网关（LAN），WAN可直接将option proto设置成DHCP  
 
-第一块网卡是lan口网卡，处于31网段。  
-第二块网卡是wan口网卡，直接桥接。  
+        因为openwrt有wan、lan口则需要两块网卡，如下：  
+
+        第一块网卡是lan口网卡，处于31网段。  
+        第二块网卡是wan口网卡，直接桥接。  
+
+  注意：  
+        在给虚拟机添加网卡的时候，openwrt虚拟机两块网卡顺序不能变，第一块为lan口网卡，第二块为wan口网卡  
+
+![3.配置网络网卡顺序.png](/openwrt/3.配置网络网卡顺序.png)   
+
 
 
 
