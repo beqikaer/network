@@ -3,22 +3,26 @@
 **1.openwrt软路由介绍及搭建**  
 
 **第一步**
+
 虚拟机文件下载到电脑中解压缩，然后在VMware Workstation软件中选择文件菜单里的打开命令，找到刚才解压缩的文件，导入虚拟机(需要大概1.5G的硬盘空间)  
 虚拟机文件下载链接: https://pan.baidu.com/s/1kWRZtQn 密码: 5qcj  
 
 **第二步** 
 导入虚拟机  
+
 ![1.导入虚拟机.png](/openwrt/1.导入虚拟机.png)  
 
 **第三步** 
 开启虚拟机  
+
 ![2.开启虚拟机.png](/openwrt/2.开启虚拟机.png) 
 
         输入vi /etc/config/network  
         修改网卡，网卡配置如下，按需修改lan以及wan口的IP。wq!保存  
 
-第四步  
+**第四步**  
 配置网络  
+
 ![3.配置网络.png](/openwrt/3.配置网络.png)  
 
         service network restart重启网卡 
@@ -38,15 +42,14 @@
 ![3.配置网络网卡顺序.png](/openwrt/3.配置网络网卡顺序.png)   
 
 
+**至此软路由搭建完毕，如需配置需要在，网关、网段内搭建可操作的win操作系统**  
+
+![3.网段内ip设置.png](/openwrt/3.网段内ip设置.png)   
+
+
 
 
 2.群晖系统的搭建  
-
-
-
 3.win7系统搭建  
-
-
 4.虚拟机网络配置  
-
-![截图](a.png)  
+ 
